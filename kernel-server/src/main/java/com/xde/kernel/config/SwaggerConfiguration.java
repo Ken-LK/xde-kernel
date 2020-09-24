@@ -34,10 +34,10 @@ public class SwaggerConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("孝德核心 RESTful APIs")
-                .description("孝德核心API")
+                .title("核心 RESTful APIs")
+                .description("核心API")
                 .termsOfServiceUrl("http://localhost:8080/")
-                .contact(new Contact("Ken", "", "ken_lk@126.com"))
+                .contact(new Contact("Ken", "", "liukailk.ken@gmail.com"))
                 .version("1.0")
                 .build();
     }
