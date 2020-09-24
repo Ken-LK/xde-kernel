@@ -30,10 +30,3 @@ spring:
 logging:
   level:
     org.springframework.web.servlet.mvc: trace
-
-# 天翼云
-tianyiyun:
-  accessId: d2aaab960d389a44e652
-  secret: ce4ab893a611b88310a6db68b7997e589674faa9
-  entpoints: http://oos-cn.ctyunapi.cn
-  bucket: xiaode

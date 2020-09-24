@@ -14,8 +14,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author <a href="mailto:liukailk.ken@gmail.com"> Ken </a>
  * @date 2020/9/2 4:04 下午
  **/
-//@ServerEndpoint("/myWs")
-//@Component
+@ServerEndpoint("/myWs")
+@Component
 @Slf4j
 public class WsServerEndpoint {
 

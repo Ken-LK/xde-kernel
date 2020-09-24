@@ -31,16 +31,6 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
-        <!--天翼云SDK-->
-        <dependency>
-            <groupId>cn.ctyun</groupId>
-            <artifactId>oos-sdk</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
