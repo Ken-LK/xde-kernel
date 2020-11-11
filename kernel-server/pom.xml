@@ -8,17 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <description>服务提供</description>
+    <description>spring cloud服务提供</description>
     <artifactId>kernel-server</artifactId>
 
     <dependencies>
-
-        <dependency>
-            <groupId>com.xde.kernel</groupId>
-            <artifactId>kernel-orm</artifactId>
-        </dependency>
-
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,33 +40,33 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
 
-        <!--		<dependency>-->
-        <!--			<groupId>com.alibaba.cloud</groupId>-->
-        <!--			<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
-        <!--		</dependency>-->
-        <!--		<dependency>-->
-        <!--			<groupId>com.alibaba.cloud</groupId>-->
-        <!--			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
-        <!--		</dependency>-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
         <!--		<dependency>-->
         <!--			<groupId>org.flywaydb</groupId>-->
         <!--			<artifactId>flyway-core</artifactId>-->
         <!--		</dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
-<!--            <exclusions>-->
-<!--                <exclusion>-->
-<!--                    <artifactId>HdrHistogram</artifactId>-->
-<!--                    <groupId>org.hdrhistogram</groupId>-->
-<!--                </exclusion>-->
-<!--                <exclusion>-->
-<!--                    <artifactId>jsr305</artifactId>-->
-<!--                    <groupId>com.google.code.findbugs</groupId>-->
-<!--                </exclusion>-->
-<!--            </exclusions>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
+        <!--            <exclusions>-->
+        <!--                <exclusion>-->
+        <!--                    <artifactId>HdrHistogram</artifactId>-->
+        <!--                    <groupId>org.hdrhistogram</groupId>-->
+        <!--                </exclusion>-->
+        <!--                <exclusion>-->
+        <!--                    <artifactId>jsr305</artifactId>-->
+        <!--                    <groupId>com.google.code.findbugs</groupId>-->
+        <!--                </exclusion>-->
+        <!--            </exclusions>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>io.springfox</groupId>
@@ -90,6 +83,23 @@
             <artifactId>hutool-all</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xde.kernel</groupId>
+            <artifactId>kernel-tool</artifactId>
+            <version>${kernel-server.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -102,7 +112,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
 
 
     </dependencies>

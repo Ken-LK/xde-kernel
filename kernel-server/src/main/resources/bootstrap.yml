@@ -1,0 +1,16 @@
+server:
+  port: 6001
+spring:
+  profiles:
+    active: dev
+  application:
+    name: xde-kenel-sever
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: aa772739-6c6e-427d-ad23-240b9818dc5c
+      config:
+        server-addr: localhost:8848
+        namespace: aa772739-6c6e-427d-ad23-240b9818dc5c
+        file-extension: yaml

@@ -3,12 +3,14 @@ package com.xde.kernel;
 import com.xde.kernel.wsendpoint.WsServerEndpoint;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * @author Ken
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 public class XdeKernelApplication {
 
 	public static void main(String[] args) {

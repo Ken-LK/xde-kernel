@@ -16,7 +16,7 @@ import java.util.Map;
  * @date 2020/9/3 8:59 上午
  **/
 @Component
-public class MyInterceptor implements HandshakeInterceptor {
+public class WebsocketInterceptor implements HandshakeInterceptor {
 
 
     /**

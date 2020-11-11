@@ -1,7 +1,7 @@
 package com.xde.kernel.config;
 
 import com.xde.kernel.handler.HttpAuthHandler;
-import com.xde.kernel.interceptor.MyInterceptor;
+import com.xde.kernel.interceptor.WebsocketInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
@@ -19,13 +19,13 @@ public class SpringWebSocketConfig implements WebSocketConfigurer {
     @Autowired
     private HttpAuthHandler httpAuthHandler;
     @Autowired
-    private MyInterceptor myInterceptor;
+    private WebsocketInterceptor websocketInterceptor;
 
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry
                 .addHandler(httpAuthHandler, "myWs")
-                .addInterceptors(myInterceptor)
+                .addInterceptors(websocketInterceptor)
                 .setAllowedOrigins("*");
     }
 
